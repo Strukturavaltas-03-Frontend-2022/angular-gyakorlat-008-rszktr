@@ -18,6 +18,11 @@ export class EventsListComponent implements OnInit {
     private router: Router,
   ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+
+
+  onDelete(event: Event): void {
+    this.eventService.remove(event.id)
+  }
 
 }

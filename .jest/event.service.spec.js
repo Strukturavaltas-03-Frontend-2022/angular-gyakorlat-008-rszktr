@@ -42164,6 +42164,7 @@ If '${name}' is a directive input, make sure the directive is imported by the cu
       return this.http.post(this.eventsUrl, event);
     }
     remove(id) {
+      console.log(`${this.eventsUrl}/${id}`);
       return this.http.delete(`${this.eventsUrl}/${id}`);
     }
   };
